@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" group="system" client="administrator">
+	<name>Hitsteps Live Stats</name>
+	<author>Hitsteps</author>
+	<authorEmail>sales@hitsteps.com</authorEmail>
+	<authorUrl>http://www.hitsteps.com</authorUrl>
+	<creationDate>2015-12-24</creationDate>
+	<copyright>Copyright (c)2010-2015 Hitsteps</copyright>
+	<license>GNU GPL v3</license>
+	<version>2.06</version>
+	<description><![CDATA[
+	Hitsteps Administrator Control Panel Widget
+	]]></description>
+	<files>
+		<filename module="mod_jhitstepsadmin">mod_jhitstepsadmin.php</filename>
+	</files>
+</extension>

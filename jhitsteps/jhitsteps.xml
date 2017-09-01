@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>Hitsteps Live Stats</name>
+	<author>Hitsteps</author>
+	<creationDate>December 2015</creationDate>
+	<copyright>Copyright (C) 2015 Hitsteps, All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>sales@hitsteps.com</authorEmail>
+	<authorUrl>http://www.hitsteps.com</authorUrl>
+	<version>2.06</version>
+	<description><![CDATA[ 
+<a target="_blank" href="http://www.hitsteps.com/?tag=joomla-to-homepage"><h1>
+Hit Steps - an eye on your site</h1></a>
+<a target="_blank" href="http://www.hitsteps.com/features.php">
+<img border="0" src="http://www.hitsteps.com/images/features/dashboardh.jpg" width="169" height="100" align="right"></a>Hit Steps realtime visitor activity tracker and analytics, allows you to be aware what is going in your websites right now and has detailed archive for tracked visitor data. If you don't have an API code yet, you can get 
+your free trial one at 
+<a href="http://www.hitsteps.com/?tag=joomla-to-ht">hitsteps.com</a>.<br><br><a href="http://www.hitsteps.com/register.php?tag=wp-getyourcode" target="_blank" class="btn btn-primary">Get your API code</a><br><small>Each site has it's own API Code. It Looks like 3defb4a2e4426642ea... and can be found in setting page of hitsteps.com</small><br><h2>How configure Hit Steps at Joomla?</h2>Just 
+<a href="http://www.hitsteps.com/register.php?tag=joomla-to-ht-reg">Sign up 
+for a hit steps account</a> and follow steps.<br>
+Login to your hit steps account, Add your website address to your hit steps account.<br>then in hitsteps.com setting page, you will get your Hit Steps API code.<br>
+Paste that code in Basic Options panel field.<br>All your Visitors information will be tracked and logged in real-time and you can monitor them in your hitsteps.com dashboard, Real-time! and it have more to offer!</p>
+	<p class="submit"><a href="http://www.hitsteps.com/features.php" target="_blank" class="btn">view hit steps features</a></p>
+<p class="submit">Hit Steps also support normal websites ( non joomla based 
+) which you can see code in hitsteps.com setting page.<br><br>For Step-by-Step instruction on how install this joomla plugin, please visit <a href="http://www.hitsteps.com/plugin/?type=joomla" class="btn">our official guide</a>.
+	]]></description>
+	<files>
+		<filename plugin="jhitsteps">jhitsteps.php</filename>
+	</files>
+	
+
+
+	<config>
+	
+		<fields name="params">
+		
+			<fieldset name="basic">
+        <field name="hitstepsapi" type="text" default="" label="Hitsteps API Code" description="You can find your Hit Steps API code in hitsteps.com Setting page of your website. You need to have a hitsteps.com account to get your website's API Key. API Key used to send your traffic for analytics to Hit Steps, it offers many features for you such as live visitor activity monitoring, starting live chat with your visitors, top pages, top referrals and much more..." />
+        			</fieldset>	<fieldset name="advanced">
+		<field name="hitsteps_trackadmin" type="list" default="1" label="Track Admin Access" description="By enabling this you will see admin activity in Hit Steps Analytics">
+			<option value="1">Yes</option> 
+			<option value="0">No</option> 
+		</field>
+ 		<field name="hitsteps_trackemails" type="list" default="0" label="Track Emails" description="By enabling this you will track emails for logged-in users">
+ 			<option value="0">Off</option>
+ 			<option value="1">On</option>
+ 		</field>
+ 		<field name="hitsteps_floatingchat" type="list" default="1" label="Enable Floating Chat" description="By enabling this you show floating chat widget on bottom right of pages">
+ 			<option value="0">Off</option>
+ 			<option value="1">On</option>
+ 		</field>
+ 		<field name="hitsteps_lang" type="list" default="1" label="Live Chat default language" description="You can control which language displayed to users, or let it default so we detect user langauge.">
+ 			<option value="auto">auto</option>
+ 			<option value="en">English</option>
+ 			<option value="es">Español</option>
+ 			<option value="fr">Français</option>
+ 			<option value="de">Deutsch</option>
+ 			<option value="ru">Русский</option>
+ 			<option value="fa">فارسی</option>
+ 			<option value="tr">Türkçe</option>
+ 		</field>
+		<field name="wdimg" type="text" default="" label="Custom Online Image URL" description="Custom Image URL to show for Online presence of chat widget" />
+		<field name="wdoff" type="text" default="" label="Custom Offline Image URL" description="Custom Image URL to show for Offline presence of chat widget" />
+			</fieldset>
+			
+
+		</fields>
+		
+	</config>
+	
+</extension>

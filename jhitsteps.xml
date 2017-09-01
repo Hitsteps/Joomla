@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>Hitsteps Analytics</name>
+	<creationDate>2015-12-24</creationDate>
+	<author>Hitsteps</author>
+	<authorEmail>sales@hitsteps.com</authorEmail>
+	<authorUrl>http://www.hitsteps.com</authorUrl>
+	<copyright>Copyright (c)2013-2015 Hitsteps</copyright>
+	<license>This component in released under the GNU/GPL v3 or later license</license>
+	<version>2.06</version>
+	<description><![CDATA[Hitsteps Visitor Manager - Realtime Visitor Activity Tracker]]></description>
+
+<administration>
+<menu view="cpanel" img="/components/com_hitstepsanalytics/hitsteps-16.gif" label="Hitsteps">Hitsteps</menu>
+
+<files>
+			<filename>hitsteps-16.gif</filename>
+			<filename>logo-48.png</filename>
+			<filename>hitstepsanalytics.php</filename>
+
+			<folder>mod_jhitstepsadmin</folder>
+			<folder>mod_jhitstepschat</folder>
+			<folder>mod_jhitstepsstats</folder>
+			<folder>jhitsteps</folder>
+</files>
+</administration>
+
+	<installfile>install.hitsteps.php</installfile>
+	<uninstallfile>uninstall.hitsteps.php</uninstallfile>
+	<scriptfile>script.hitsteps.php</scriptfile>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Hitsteps Update"><![CDATA[http://www.hitsteps.com/plugin/joomla/update.xml]]></server>
+	</updateservers>
+
+</extension>
